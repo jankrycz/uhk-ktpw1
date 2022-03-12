@@ -1,0 +1,24 @@
+nav {
+	display: flex;
+	flex-direction: row;
+
+	& .menu {
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		padding: 0 2rem;
+		color: $color-black;
+		margin-left: auto;
+
+		& li {
+			padding: 2.5rem 1rem;
+
+			& a {
+				color: $color-black;
+				text-decoration: none;
+				font-size: 2rem;
+			}
+		}
+
+	}
+}

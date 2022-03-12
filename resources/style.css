@@ -2,3 +2,12 @@
 @import "global/variables.css";
 @import "global/global.css";
 @import "global/font.css";
+@import "global/layout.css";
+
+/* Components */
+@import "components/button.css";
+@import "components/navigation.css";
+@import "components/header.css";
+@import "components/section.css";
+@import "components/recipe.css";
+@import "components/footer.css";
