@@ -102,4 +102,23 @@
 			display: none;
 		}
 	}
+
+	&.-author {
+
+		& .recipe_footer-social {
+			margin: 0.3rem;
+			text-decoration: none;
+
+			& svg {
+				width: 3.5rem;
+				height: 3.5rem;
+			}
+
+			&:hover {
+				& svg path {
+					fill: $color-pink;
+				}
+			}
+		}
+	}
 }
