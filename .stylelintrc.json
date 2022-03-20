@@ -20,7 +20,6 @@
 		"value-no-vendor-prefix": true,
 		"number-leading-zero": "never",
 		"function-url-quotes": "always",
-		"function-url-data-uris": "always",
 		"font-weight-notation": "numeric",
 		"font-family-name-quotes": "always-where-recommended",
 		"comment-whitespace-inside": "always",

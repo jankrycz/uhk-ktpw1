@@ -18,7 +18,8 @@
 	},
 	"homepage": "https://github.com/jankrycz/uhk-ktpw1#readme",
 	"dependencies": {
-		"stylelint": "^14.5.3"
+		"stylelint": "^14.5.3",
+		"stylelint-config-standard": "^25.0.0"
 	},
 	"devDependencies": {
 		"autoprefixer": "^10.4.2",
