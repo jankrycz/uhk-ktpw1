@@ -9,5 +9,6 @@
 @import "components/navigation.css";
 @import "components/header.css";
 @import "components/section.css";
+@import "components/pagination.css";
 @import "components/recipe.css";
 @import "components/footer.css";
