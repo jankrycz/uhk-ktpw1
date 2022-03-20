@@ -1,14 +1,16 @@
 /* Global */
-@import "global/variables.css";
-@import "global/global.css";
-@import "global/font.css";
-@import "global/layout.css";
+@import 'global/variables.css';
+@import 'global/global.css';
+@import 'global/font.css';
+@import 'global/layout.css';
 
 /* Components */
-@import "components/button.css";
-@import "components/navigation.css";
-@import "components/header.css";
-@import "components/section.css";
-@import "components/pagination.css";
-@import "components/recipe.css";
-@import "components/footer.css";
+@import 'components/button.css';
+@import 'components/navigation.css';
+@import 'components/header.css';
+@import 'components/section.css';
+@import 'components/pagination.css';
+@import 'components/recipe.css';
+@import 'components/ingredients.css';
+@import 'components/stepGuide.css';
+@import 'components/footer.css';

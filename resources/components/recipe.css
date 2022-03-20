@@ -1,11 +1,9 @@
 .recipe {
 	margin: 1.5rem 1.5rem 3.5rem;
-	//border: 1px solid red;
 	border-radius: 1rem 1rem 0 0;
 	background: $color-white;
 	overflow: hidden;
 	box-shadow: 6px 3px 13px -1px $color-gray;
-
 
 	& .recipeHeader {
 		position: relative;
@@ -67,13 +65,27 @@
 		}
 	}
 
+	& .recipe_body {
+		display: flex;
+		justify-content: row;
+		flex-wrap: wrap;
+		padding: 1.5rem;
+
+		& .recipe_perex {
+			width: 65%;
+		}
+
+		& .ingredients {
+			width: 35%;
+		}
+	}
+
 	& .recipe_labels {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		padding: 0 1.5rem;
 		margin-top: 2rem;
-
 		border: 1px solid red;
 
 		& .recipe_labels-label {
@@ -85,25 +97,6 @@
 	& .recipe_footer {
 		margin: 2rem 0;
 		text-align: center;
-	}
-
-	/* recipe types */
-	&.-selected {
-		& .recipe_title {
-			font-size: 2rem;
-		}
-
-		& .recipe_perex {
-			font-size: 1.4rem;
-			line-height: 2.2rem;
-		}
-
-		& .recipe_category {
-			display: none;
-		}
-	}
-
-	&.-author {
 
 		& .recipe_footer-social {
 			margin: 0.3rem;
@@ -119,6 +112,22 @@
 					fill: $color-pink;
 				}
 			}
+		}
+	}
+
+	/* recipe types */
+	&.-selected {
+		& .recipe_title {
+			font-size: 2rem;
+		}
+
+		& .recipe_perex {
+			font-size: 1.4rem;
+			line-height: 2.2rem;
+		}
+
+		& .recipe_category {
+			display: none;
 		}
 	}
 }
