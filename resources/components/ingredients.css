@@ -1,0 +1,31 @@
+/* @member of recipe */
+
+.ingredients {
+	padding: 1.5rem;
+	margin-bottom: 2rem;
+	background: $color-gray-light;
+
+	& .ingredients_title {
+		margin: 0;
+		font-size: 2rem;
+		color: $color-pink;
+	}
+
+	& .ingredients_list {
+		font-size: 1.6rem;
+
+		& dd {
+			margin: .5rem 0 0 2rem;
+		}
+	}
+
+	& .ingredients_list-sectionTitle {
+		font-weight: 600;
+		font-size: 1.6rem;
+		margin-bottom: .5rem;
+
+		&:not(:first-child) {
+			margin-top: 1rem;
+		}
+	}
+}

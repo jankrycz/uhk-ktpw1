@@ -1,0 +1,133 @@
+.recipe {
+	margin: 1.5rem 1.5rem 3.5rem;
+	border-radius: 1rem 1rem 0 0;
+	background: $color-white;
+	overflow: hidden;
+	box-shadow: 6px 3px 13px -1px $color-gray;
+
+	& .recipeHeader {
+		position: relative;
+	}
+
+	& .recipe_image {
+		margin-bottom: 4.5rem;
+		border-bottom: 0.3rem solid $color-pink;
+
+		& img {
+			display: block;
+			max-width: 100%;
+		}
+	}
+
+	& .recipe_author {
+		position: absolute;
+		bottom: -3rem;
+		left: calc(50% - 3rem);
+		width: 6rem;
+		height: auto;
+		border-radius: 99999999999px;
+		border: 0.3rem solid $color-pink;
+	}
+
+	& .recipe_title {
+		color: $color-pink;
+		font-size: 3rem;
+		text-align: center;
+		margin: 1.5rem 0 0.5rem;
+	}
+
+	& .recipe_perex {
+		padding: 0 1.5rem;
+		font-size: 1.6rem;
+		text-align: left;
+
+	}
+
+	& .recipe_category {
+		list-style: none;
+		text-align: center;
+		font-size: 1.4rem;
+
+		& .recipe_category-item {
+			position: relative;
+			display: inline-block;
+
+			& a {
+				text-decoration: none;
+			}
+
+			&:not(:last-child) {
+				&::after {
+					content: '|';
+					margin: 0 0.5rem;
+				}
+			}
+		}
+	}
+
+	& .recipe_body {
+		display: flex;
+		justify-content: row;
+		flex-wrap: wrap;
+		padding: 1.5rem;
+
+		& .recipe_perex {
+			width: 65%;
+		}
+
+		& .ingredients {
+			width: 35%;
+		}
+	}
+
+	& .recipe_labels {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0 1.5rem;
+		margin-top: 2rem;
+		border: 1px solid red;
+
+		& .recipe_labels-label {
+			margin: 0 1rem;
+			border: 1px solid gray;
+		}
+	}
+
+	& .recipe_footer {
+		margin: 2rem 0;
+		text-align: center;
+
+		& .recipe_footer-social {
+			margin: 0.3rem;
+			text-decoration: none;
+
+			& svg {
+				width: 3.5rem;
+				height: 3.5rem;
+			}
+
+			&:hover {
+				& svg path {
+					fill: $color-pink;
+				}
+			}
+		}
+	}
+
+	/* recipe types */
+	&.-selected {
+		& .recipe_title {
+			font-size: 2rem;
+		}
+
+		& .recipe_perex {
+			font-size: 1.4rem;
+			line-height: 2.2rem;
+		}
+
+		& .recipe_category {
+			display: none;
+		}
+	}
+}

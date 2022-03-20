@@ -1,0 +1,22 @@
+.button {
+	display: inline-block;
+	width: auto;
+	padding: 1em 2em;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	&.-primary {
+		background: $color-pink;
+		color: $color-white;
+	}
+}
+
+a {
+	color: $color-black-light;
+	text-decoration: underline;
+	transition: 0.5s;
+
+	&:hover {
+		color: $color-pink;
+	}
+}

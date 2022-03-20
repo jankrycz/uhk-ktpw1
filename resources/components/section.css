@@ -1,0 +1,17 @@
+.section {
+	padding: 5rem 0;
+
+	& .section_title {
+		color: $color-white;
+		font-size: 4rem;
+	}
+
+
+	/* Section story */
+	&.-story {
+		& .story_image {
+			border-radius: 99999px;
+			border: 2rem solid red;
+		}
+	}
+}
