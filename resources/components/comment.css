@@ -1,0 +1,78 @@
+.comments {
+	margin: 1.5rem 1.5rem 3.5rem;
+	padding: 1.5rem;
+	background: $color-white;
+	overflow: hidden;
+	box-shadow: 6px 3px 13px -1px $color-gray;
+}
+
+.comments_list {
+	margin: 6rem 0;
+}
+
+.comments_rules {
+	margin: 2rem 0;
+	padding: 0 0 0 1rem;
+	font-size: 1.4rem;
+	border-left: 0.5rem solid $color-pink;
+}
+
+.comment {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: space-between;
+	margin: 4rem 0 0 2rem;
+	padding: 1rem;
+	background: $color-gray-light;
+
+	& .comment_image {
+		margin: -1.5rem 1rem 0 -3rem;
+		width: 5rem;
+
+		& .avatar {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 5rem;
+			height: 5rem;
+			border-radius: 5rem;
+			border: .5rem solid $color-white;
+			background: $color-pink;
+			color: $color-white;
+			font-size: 2.6rem;
+		}
+	}
+
+	& .comment_content {
+		width: calc(100% - 6rem);
+	}
+
+	& .comment_info {
+
+		& .comment_info-authorName {
+			font-size: 2rem;
+			font-weight: 600;
+		}
+
+		& .comment_info-date {
+			padding-left: 1rem;
+		}
+	}
+
+	& .comment_footer {
+		width: 100%;
+		margin-left: 3rem;
+
+		& .comment_footer-link {
+			padding: 0 .5rem;
+
+			&:first-child {
+				padding-left: 0;
+			}
+		}
+	}
+
+	&.-reply {
+		margin: 4rem 0 0 8rem;
+	}
+}

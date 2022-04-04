@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Foodie | Food blog by Jan Kry</title>
 		<link rel="stylesheet" href="../assets/css/style.css" />
+		<script src="../assets//js/validation.js"></script>
 	</head>
 	<body>
 		<nav>
@@ -112,10 +113,81 @@
 						</a>
 					</div>
 
-					<div class="comments">
-						comments section
-					</div>
 				</article>
+				<section class="comments">
+					<h3 class="comments_headline">Leave a comment</h3>
+					<p class="comments_rules">Be kind to each others. Links are not allowed! All expresion words will be replaced.</p>
+					<div class="comments_addBox">
+						<form action="#" id="js-commentForm" class="form comments_addForm">
+							<div class="form_line">
+								<label for="" class="form_label">Name</label>
+								<input type="text" id="js-name" name="userName" class="form_input" placeholder="Your name">
+							</div>
+
+							<div class="form_line">
+								<label for="" class="form_label">Email</label>
+								<input type="email" id="js-email" name="userEmail" class="form_input" />
+							</div>
+
+							<div class="form_line">
+								<label for="" class="form_label">Comment</label>
+								<textarea id="js-comment" name="userMessage" class="form_textarea" ></textarea>
+							</div>
+							<button id="js-submit" class="button -primary form_submit">add comment</button>
+						</form>
+					</div>
+
+					<section class="comments_list">
+						<div class="comment">
+							<div class="comment_image">
+								<div class="avatar">W</div>
+							</div>
+							<div class="comment_content">
+								<div class="comment_info">
+									<span class="comment_info-authorName">William Shakespeare</span>
+									<span class="comment_info-date">on 2. April 2022</span>
+								</div>
+								<p class="comment_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nunc euismod congue gravida, nisl nunc euismod nunc, eu congue nisl nunc euismod nunc.</p>
+							</div>
+							<div class="comment_footer">
+								<a href="#" class="comment_footer-link">Reply</a> | <a href="#" class="comment_footer-link">Like (+11)</a> | <a href="#" class="comment_footer-link">Report</a>
+							</div>
+						</div>
+
+						<div class="comment -reply">
+							<div class="comment_image">
+								<div class="avatar">W</div>
+							</div>
+							<div class="comment_content">
+								<div class="comment_info">
+									<span class="comment_info-authorName">William Shakespeare</span>
+									<span class="comment_info-date">on 2. April 2022</span>
+								</div>
+								<p class="comment_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nunc euismod congue gravida, nisl nunc euismod nunc, eu congue nisl nunc euismod nunc.</p>
+							</div>
+							<div class="comment_footer">
+								<a href="#" class="comment_footer-link">Reply</a> | <a href="#" class="comment_footer-link">Like (+11)</a> | <a href="#" class="comment_footer-link">Report</a>
+							</div>
+						</div>
+
+						<div class="comment">
+							<div class="comment_image">
+								<div class="avatar">W</div>
+							</div>
+							<div class="comment_content">
+								<div class="comment_info">
+									<span class="comment_info-authorName">William Shakespeare</span>
+									<span class="comment_info-date">on 2. April 2022</span>
+								</div>
+								<p class="comment_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nunc euismod congue gravida, nisl nunc euismod nunc, eu congue nisl nunc euismod nunc.</p>
+							</div>
+							<div class="comment_footer">
+								<a href="#" class="comment_footer-link">Reply</a> | <a href="#" class="comment_footer-link">Like (+11)</a> | <a href="#" class="comment_footer-link">Report</a>
+							</div>
+						</div>
+
+					</section>
+				</section>
 			</main>
 			<aside class="aside">
 				<section class="topRecipe">

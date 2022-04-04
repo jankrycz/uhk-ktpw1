@@ -1,0 +1,41 @@
+.form {
+
+	& .form_line {
+		margin: 1rem 0;
+
+		&.-error {
+
+			& .form_input {
+				border: .1rem solid $color-red;
+			}
+		}
+	}
+
+	& .form_label {
+		display: block;
+		font-size: 1.6rem;
+		font-weight: 600;
+		color: $color-black-light;
+	}
+
+	& .form_input,
+	& .form_textarea {
+		margin-top: 0.5rem;
+		padding: 1rem;
+		max-width: 100%;
+		width: 100%;
+		font-size: 1.6rem;
+		border: .1rem solid $color-black-light;
+
+		&:focus,
+		&:active {
+			border: .1rem solid $color-pink;
+			outline: none;
+		}
+	}
+
+	& .form_error {
+		color: $color-red;
+		font-size: 1.4rem;
+	}
+}
