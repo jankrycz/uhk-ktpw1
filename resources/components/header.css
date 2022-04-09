@@ -1,3 +1,70 @@
 header {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	background: $color-white;
+	box-shadow: 6px 3px 13px -1px $color-gray;
 
+	& .header_menuBurger {
+		display: none;
+		width: 2.5rem;
+		height: 2.5rem;
+
+		& .header_menuBurger_line {
+			width: 2.5rem;
+			height: 2px;
+			background: $color-black;
+			margin: .5rem 0;
+			transition: all .3s ease;
+		}
+
+		&.-open {
+
+			& .header_menuBurger_line {
+
+				&:first-child {
+					position: relative;
+					top: .5rem;
+					right: .5rem;
+					width: 3.3rem;
+					transform: rotate(-45deg);
+				}
+
+				&:nth-child(2) {
+					position: relative;
+					bottom: 0;
+					right: .5rem;
+					width: 3.3rem;
+					transform: rotate(45deg);
+				}
+
+				&:last-child {
+					display: none;
+				}
+			}
+		}
+
+		@media (max-width: $tablet-max) {
+			display: block;
+		}
+	}
+
+	& .header_menu {
+		display: flex;
+
+		@media (max-width: $tablet-max) {
+			display: none;
+
+			&.-open {
+				display: flex;
+				width: 100%;
+			}
+		}
+	}
+
+	@media (max-width: $tablet-max) {
+		padding: 2rem 1rem;
+	}
 }
