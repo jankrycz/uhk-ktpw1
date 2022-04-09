@@ -8,6 +8,10 @@
 @import 'components/button.css';
 @import 'components/navigation.css';
 @import 'components/header.css';
+@import 'components/comment.css';
+@import 'components/gallery.css';
+@import 'components/modal.css';
+@import 'components/form.css';
 @import 'components/section.css';
 @import 'components/pagination.css';
 @import 'components/recipe.css';

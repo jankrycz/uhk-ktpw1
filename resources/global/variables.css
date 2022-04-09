@@ -3,8 +3,17 @@ $color-black: #000;
 $color-black-light: #2d2d2d;
 $color-white: #fff;
 $color-gray: #e7e7e7;
-$color-gray-light: #F9F9F9;
-$color-yellow: #FFE0AC;
-$color-pink: #F67280;
+$color-gray-light: #f9f9f9;
+$color-yellow: #ffe0ac;
+$color-pink: #f67280;
 $color-pink-dark: #be5661;
-$color-purple: #6C5B7B;
+$color-purple: #6c5b7b;
+$color-red: #c0392b;
+
+/* Layout sizes */
+$mobile-min: 320px;
+$mobile-max: 767px;
+$tablet-min: 768px;
+$tablet-max: 991px;
+$desktop-min: 992px;
+$desktop-max: 1199px;

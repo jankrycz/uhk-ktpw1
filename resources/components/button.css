@@ -4,6 +4,8 @@
 	padding: 1em 2em;
 	text-decoration: none;
 	text-transform: uppercase;
+	border: 0;
+	cursor: pointer;
 
 	&.-primary {
 		background: $color-pink;
@@ -15,6 +17,7 @@ a {
 	color: $color-black-light;
 	text-decoration: underline;
 	transition: 0.5s;
+	cursor: pointer;
 
 	&:hover {
 		color: $color-pink;

@@ -1,21 +1,22 @@
 .contentContainer {
 	display: flex;
-/* 	border: 1px solid pink; */
 
 	& main {
 		width: 70%;
-/* 		border: 1px solid green; */
 		margin: 0 1rem 0 0;
 	}
 
 	& aside {
-/* 		border: 1px solid red; */
 		width: 30%;
 		margin: 0 0 0 1rem;
 	}
-}
 
-nav {
-	background: $color-white;
-	box-shadow: 6px 3px 13px -1px $color-gray;
+	@media (max-width: $tablet-max) {
+		flex-direction: column;
+
+		& main,
+		& aside {
+			width: 100%;
+		}
+	}
 }
