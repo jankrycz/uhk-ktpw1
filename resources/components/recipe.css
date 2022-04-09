@@ -130,4 +130,27 @@
 			display: none;
 		}
 	}
+
+	&.-detail {
+		& .recipe_footer {
+			margin: 2rem 0;
+			padding: 0 1.5rem;
+			text-align: right;
+
+			& .recipe_footer-social {
+				position: relative;
+				margin: .3rem;
+				text-decoration: underli-ne;
+
+				&:not(:last-child) {
+
+					&:after {
+						content: '|';
+						margin: 0 0 0 .5rem;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
 }
