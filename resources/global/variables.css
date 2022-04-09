@@ -9,3 +9,11 @@ $color-pink: #f67280;
 $color-pink-dark: #be5661;
 $color-purple: #6c5b7b;
 $color-red: #c0392b;
+
+/* Layout sizes */
+$mobile-min: 320px;
+$mobile-max: 767px;
+$tablet-min: 768px;
+$tablet-max: 991px;
+$desktop-min: 992px;
+$desktop-max: 1199px;
