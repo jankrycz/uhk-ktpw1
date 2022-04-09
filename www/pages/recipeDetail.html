@@ -6,7 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Foodie | Food blog by Jan Kry</title>
 		<link rel="stylesheet" href="../assets/css/style.css" />
-		<script src="../assets//js/validation.js"></script>
+		<script src="../assets/js/validation.js"></script>
+		<script src="../assets/js/modal.js"></script>
 
 		<!-- OG images for facebook share -->
 		<meta property="og:title" content="Homemade sicilian pizza">
@@ -85,22 +86,22 @@
 
 						<div class="gallery">
 							<div class="gallery_item">
-								<a href="#">
+								<a href="#" class="js-modalTrigger" data-modal-src="../assets/img/recipe/kelvin-t-AcA8moIiD3g-unsplash.jpg">
 									<img src="../assets/img/recipe/kelvin-t-AcA8moIiD3g-unsplash.jpg" class="gallery_itemImage" alt="This is gallery image" />
 								</a>
 							</div>
 							<div class="gallery_item">
-								<a href="#">
+								<a href="#" class="js-modalTrigger" data-modal-src="../assets/img/recipe/kelvin-t-AcA8moIiD3g-unsplash.jpg">
 									<img src="../assets/img/recipe/kelvin-t-AcA8moIiD3g-unsplash.jpg" class="gallery_itemImage" alt="This is gallery image" />
 								</a>
 							</div>
 							<div class="gallery_item">
-								<a href="#">
+								<a href="#" class="js-modalTrigger" data-modal-src="../assets/img/recipe/kelvin-t-AcA8moIiD3g-unsplash.jpg">
 									<img src="../assets/img/recipe/kelvin-t-AcA8moIiD3g-unsplash.jpg" class="gallery_itemImage" alt="This is gallery image" />
 								</a>
 							</div>
 							<div class="gallery_item">
-								<a href="#">
+								<a href="#" class="js-modalTrigger" data-modal-src="../assets/img/recipe/kelvin-t-AcA8moIiD3g-unsplash.jpg">
 									<img src="../assets/img/recipe/kelvin-t-AcA8moIiD3g-unsplash.jpg" class="gallery_itemImage" alt="This is gallery image" />
 								</a>
 							</div>
@@ -115,8 +116,6 @@
 							</ol>
 						</div>
 					</div>
-
-					
 
 					<div class="recipe_footer">
 						<a href="#" class="recipe_footer-social" onClick="AddToFavorites(event, 'google.com','http://www.google.co.in')">
@@ -304,6 +303,18 @@
 				All images are from <a href="https://unsplash.com/">Unsplash</a>. Icons by <a href="https://www.freepik.com/free-vector/big-bundle-set-vector-illustrations-fine-line-icons-32x32-pixel-perfect_1320597.htm#query=food%20icons&position=4&from_view=search" target="_blank">Freepik.com</a>
 			</div>
 		</footer>
+		<!-- Modal -->
+		<div class="modal" id="js-modal">
+			<div class="modal_content">
+				<div class="modal_head">
+					<svg class="modal_cross" id="js-modalCross" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 11.293l10.293-10.293.707.707-10.293 10.293 10.293 10.293-.707.707-10.293-10.293-10.293 10.293-.707-.707 10.293-10.293-10.293-10.293.707-.707 10.293 10.293z"/></svg>
+				</div>
+				<div class="modal_body">
+					<img src="../assets/img/recipe/example.jpg" class="modal_image" id="js-modalImage" alt="Gallery image" />
+				</div>
+			</div>
+		</div>
+		<!-- /Modal -->
 		<script>
 			 function AddToFavorites(event) {  
 				// Prevent site to jump up when clicked

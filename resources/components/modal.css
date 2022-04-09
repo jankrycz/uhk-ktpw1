@@ -1,0 +1,50 @@
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background: rgb(0 0 0 / 50%);
+
+	&.-show {
+		display: flex;
+	}
+
+	& .modal_head {
+		position: relative;
+		padding-bottom: 1rem;
+		text-align: right;
+	}
+
+	& .modal_content {
+		min-width: 50%;
+		height: auto;
+		background: $color-white;
+		border-radius: 5px;
+		padding: 1rem;
+
+		@media (max-width: $tablet-max) {
+			margin: 0 2rem;
+		}
+	}
+
+	& .modal_image {
+		width: 100%;
+		height: auto;
+	}
+
+	& .modal_cross {
+		width: 2.4rem;
+		height: 2.4rem;
+		cursor: pointer;
+		transition: all .3s;
+
+		&:hover {
+			transform: rotate(180deg);
+			fill: $color-pink;
+		}
+	}
+}
