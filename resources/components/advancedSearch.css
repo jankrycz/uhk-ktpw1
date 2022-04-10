@@ -1,0 +1,56 @@
+.advancedSearch {
+	position: relative;
+	height: 100%;
+
+	& .advancedSearch_form {
+		background: $color-white;
+		box-shadow: 6px 3px 13px -1px $color-gray;
+		border-radius: 1rem 1rem 0 0;
+		margin-top: 3rem;
+		padding: 1.5rem;
+
+		@media (min-width: $desktop-min) {
+			position: sticky;
+			top: 0;
+		}
+	}
+
+	& .advancedSearch_form-item {
+		display: flex;
+		flex-flow: row wrap;
+		margin-bottom: 1.5rem;
+	}
+
+	& .advancedSearch_form-label {
+		width: 100%;
+		margin-bottom: .5rem;
+		color: $color-pink;
+	}
+
+	& .advancedSearch_form-input {
+		width: 100%;
+	}
+
+	& .advancedSearch_form-select {
+		width: 100%;
+	}
+
+	& .advancedSearch_form-radioGroup {
+		display: flex;
+		width: 100%;
+
+		& label {
+			width: 50%;
+		}
+	}
+
+	& .advancedSearch_form-checkboxGroup {
+		display: flex;
+		flex-flow: row wrap;
+		width: 100%;
+
+		& label {
+			width: 25%;
+		}
+	}
+}

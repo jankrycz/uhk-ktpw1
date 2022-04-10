@@ -8,6 +8,7 @@
 
 	/* Section story */
 	&.-story {
+
 		& .story_image {
 			border-radius: 99999px;
 			border: 2rem solid red;
