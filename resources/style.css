@@ -18,7 +18,10 @@
 @import 'components/ingredients.css';
 @import 'components/advancedSearch.css';
 @import 'components/stepGuide.css';
+@import 'components/timeline.css';
+@import 'components/table.css';
 @import 'components/footer.css';
 
 /* Pages */
+@import 'pages/subpage.css';
 @import 'pages/categories.css';

@@ -31,4 +31,9 @@ h5 {}
 	&.-center {
 		text-align: center;
 	}
+
+	&.-inside {
+		padding: 0;
+		margin: 0;
+	}
 }
