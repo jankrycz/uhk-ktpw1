@@ -11,6 +11,10 @@
 		width: 30%;
 		height: auto;
 		margin: 0 0 0 1rem;
+
+		&.-mt {
+			margin-top: 2.5rem;
+		}
 	}
 
 	@media (max-width: $tablet-max) {
