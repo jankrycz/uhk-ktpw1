@@ -12,9 +12,23 @@ nav {
 			padding: 2.5rem 1rem;
 
 			& a {
+				transition: none;
 				color: $color-black;
 				text-decoration: none;
 				font-size: 2rem;
+
+				&:hover {
+					color: $color-pink;
+					border-bottom: 2px solid $color-pink;
+				}
+			}
+
+			&.-active {
+
+				& a {
+					color: $color-pink;
+					border-bottom: 2px solid $color-pink;
+				}
 			}
 		}
 
