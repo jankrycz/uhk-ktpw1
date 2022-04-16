@@ -7,6 +7,7 @@
 	& .gallery_item {
 		width: 25%;
 		padding: .3rem;
+		overflow: hidden;
 
 		@media (max-width: $mobile-max) {
 			width: 100%;
@@ -15,10 +16,18 @@
 		@media (min-width: $tablet-min) and (max-width: $tablet-max) {
 			width: 33.33%;
 		}
+
+		&:hover {
+
+			& .gallery_itemImage {
+				transform: rotate(10deg) scale(1.3);
+			}
+		}
 	}
 
 	& .gallery_itemImage {
 		width: 100%;
 		height: auto;
+		transition: all .3s ease-in-out;
 	}
 }
