@@ -1,4 +1,3 @@
-h1 {}
 
 h2 {
 	&.aside_headline {
@@ -7,13 +6,6 @@ h2 {
 		text-align: center;
 	}
 }
-
-h3 {
-}
-
-h4 {}
-
-h5 {}
 
 .headline {
 	margin: 4rem 1rem 1.5rem;
@@ -40,4 +32,8 @@ h5 {}
 	&.-mt {
 		margin-top: 5rem;
 	}
+}
+
+p {
+	font-weight: 300;
 }
