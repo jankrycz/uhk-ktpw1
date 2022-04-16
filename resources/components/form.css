@@ -14,7 +14,7 @@
 	& .form_label {
 		display: block;
 		font-size: 1.6rem;
-		font-weight: 600;
+		font-weight: 500;
 		color: $color-black-light;
 	}
 

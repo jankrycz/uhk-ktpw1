@@ -38,6 +38,7 @@
 
 	& .recipe_perex {
 		padding: 0 1.5rem;
+		font-weight: 300;
 		font-size: 1.6rem;
 		text-align: left;
 	}

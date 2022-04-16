@@ -5,14 +5,14 @@
 
 	& .table_subHeadline {
 		font-size: 1.8rem;
-		font-weight: 600;
+		font-weight: 500;
 		background: $color-gray-light;
 	}
 
 	& .table_headline {
 		padding: 1.5rem 0;
 		font-size: 2rem;
-		font-weight: 600;
+		font-weight: 500;
 		color: $color-black;
 	}
 
