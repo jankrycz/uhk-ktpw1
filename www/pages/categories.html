@@ -157,7 +157,7 @@
 
 						<div class="advancedSearch_form-item">
 							<label class="form_label advancedSearch_form-label" for="">Category</label>
-							<select class="form_input advancedSearch_form-select" name="" id="">
+							<select class="form_select advancedSearch_form-select" name="" id="">
 								<option value="italian">Italian</option>
 								<option value="american">American</option>
 								<option value="vietnam">Vietnam</option>
@@ -173,45 +173,45 @@
 							<label class="form_label advancedSearch_form-label" for="">Vegan</label>
 							<div class="advancedSearch_form-radioGroup">
 								<label>
-									<input  class="advancedSearch_form-radio" type="radio" name="isveganFood" id=""> yes
+									<input class="form_radio advancedSearch_form-radio" type="radio" name="isveganFood" id="">
+									yes
 								</label>
 								<label>
-									<input  class="advancedSearch_form-radio" type="radio" name="isveganFood" id=""> no
+									<input class="form_radio advancedSearch_form-radio" type="radio" name="isveganFood" id="">
+									no
 								</label>
 							</div>
 						</div>
 
 						<div class="advancedSearch_form-item">
-							<label class="form_label advancedSearch_form-label" for="">Max prep time</label>
-							<input type="range" name="" id="" min="1" max="120" value="60">
+							<label class="form_label advancedSearch_form-label" for="">Max prep time (minutes)</label>
+							<input class="form_range" type="range" name="" id="js-range" min="1" max="120" value="60" data-content="60" oninput="rangeChange()">
 						</div>
 
 						<div class="advancedSearch_form-item">
 							<label class="form_label advancedSearch_form-label">Core ingredients</label>
 							<div class="advancedSearch_form-checkboxGroup">
 								<label for="cheese">
-									<input type="checkbox" name="cheese"> Cheese
+									<input class="form_checkbox" type="checkbox" name="cheese"> Cheese
 								</label>
 								<label for="meat">
-									<input type="checkbox" name="meat"> Meat
+									<input class="form_checkbox" type="checkbox" name="meat"> Meat
 								</label>
-								<label for="vegetable">
-									<input type="checkbox" name="vegetable"> Vegetable
-								</label>
+
 								<label for="fruit">
-									<input type="checkbox" name="fruit"> Fruit
+									<input class="form_checkbox" type="checkbox" name="fruit"> Fruit
 								</label>
 								<label for="dairy">
-									<input type="checkbox" name="dairy"> Dairy
+									<input class="form_checkbox" type="checkbox" name="dairy"> Dairy
 								</label>
 								<label for="sauce">
-									<input type="checkbox" name="sauce"> Sauce
+									<input class="form_checkbox" type="checkbox" name="sauce"> Sauce
 								</label>
 								<label for="spice">
-									<input type="checkbox" name="spice"> Spice
+									<input class="form_checkbox" type="checkbox" name="spice"> Spice
 								</label>
 								<label for="other">
-									<input type="checkbox" name="other"> Other
+									<input class="form_checkbox" type="checkbox" name="other"> Other
 								</label>
 							</div>
 						</div>
@@ -241,7 +241,7 @@
 		</div>
 		<!-- /Modal -->
 		<script>
-			 function AddToFavorites(event) {
+			function AddToFavorites(event) {
 				// Prevent site to jump up when clicked
 				event.preventDefault();
 				// Mozilla firefox
@@ -258,6 +258,11 @@
 				} else {
 					alert('Press ' + (navigator.userAgent.toLowerCase().indexOf('mac') != -1 ? 'Command/Cmd' : 'CTRL') + ' + D to bookmark this recipe.');
 				}
+			}
+
+			function rangeChange(event) {
+				let range = document.getElementById('js-range');
+				range.dataset.content = range.value;
 			}
 		</script>
 	</body>

@@ -19,7 +19,8 @@
 	}
 
 	& .form_input,
-	& .form_textarea {
+	& .form_textarea,
+	& .form_select {
 		margin-top: 0.5rem;
 		padding: 1rem;
 		max-width: 100%;
@@ -31,6 +32,99 @@
 		&:active {
 			border: .1rem solid $color-pink;
 			outline: none;
+		}
+	}
+
+	& .form_radio {
+		appearance: none;
+		cursor: pointer;
+		background-color: $color-white;
+		margin: 0 .5rem 0 0;
+		width: 1.5rem;
+		height: 1.5rem;
+		border: .1rem solid $color-black-light;
+		border-radius: 50%;
+		transform: translateY(-.075em);
+		display: grid;
+		place-content: center;
+
+		&:before {
+			content: '';
+			width: .7em;
+			height: .7em;
+			border-radius: 50%;
+			transform: scale(0);
+			transition: 120ms transform ease-in-out;
+			box-shadow: inset 1rem 1rem $color-pink;
+		}
+
+		&:checked:before {
+			transform: scale(1);
+		}
+	}
+
+	& .form_checkbox {
+		display: grid;
+		margin: 0;
+		width: 1.5rem;
+		height: 1.5rem;
+		appearance: none;
+		cursor: pointer;
+		border: .1rem solid $color-black-light;
+		place-content: center;
+
+		&:before {
+			content: '';
+			width: .65rem;
+			height: .65rem;
+			clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+			transform: scale(0);
+			transform-origin: bottom left;
+			transition: .1s transform ease-in-out;
+			background-color: $color-pink;
+		}
+
+		&:checked:before {
+			transform: scale(1);
+		}
+	}
+
+	& .form_select {
+		appearance: none;
+		cursor: pointer;
+		border-radius: 0;
+		background-image: url('../icons/iconmonstr-arrow-80.svg');
+		background-repeat: no-repeat;
+		background-position: right .5rem center;
+		background-size: 1.3rem;
+	}
+
+	& .form_range {
+		appearance: none;
+		width: 100%;
+
+		&::-webkit-slider-thumb {
+			appearance: none;
+			width: 1.8rem;
+			height: 1.8rem;
+			margin-top: -.7rem;
+			background-color: $color-pink;
+		}
+
+		&::-webkit-slider-runnable-track {
+			margin: 1rem 0;
+			height: .4rem;
+			background-color: $color-gray;
+		}
+
+		&:after {
+			content: attr(data-content);
+			display: block;
+			width: 2rem;
+			height: 2rem;
+			line-height: 2rem;
+			text-align: center;
+			margin-left: .5rem;
 		}
 	}
 
