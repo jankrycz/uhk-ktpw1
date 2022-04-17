@@ -16,6 +16,7 @@
 		& img {
 			display: block;
 			max-width: 100%;
+			min-height: 30rem;
 		}
 	}
 
@@ -81,20 +82,6 @@
 		}
 	}
 
-	& .recipe_labels {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 0 1.5rem;
-		margin-top: 2rem;
-		border: 1px solid red;
-
-		& .recipe_labels-label {
-			margin: 0 1rem;
-			border: 1px solid gray;
-		}
-	}
-
 	& .recipe_footer {
 		margin: 2rem 0;
 		text-align: center;
@@ -129,6 +116,10 @@
 
 		& .recipe_category {
 			display: none;
+		}
+
+		& .recipe_image img {
+			min-height: auto;
 		}
 	}
 
