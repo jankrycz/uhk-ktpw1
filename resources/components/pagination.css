@@ -2,6 +2,7 @@
 	display: flex;
 	justify-content: center;
 	padding: 1.5rem 0;
+	list-style: none;
 
 	& .paginator_item {
 		padding: 1rem 1.5rem;
