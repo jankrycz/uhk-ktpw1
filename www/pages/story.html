@@ -25,7 +25,7 @@
 			<h1 class="header_site">
 				<a href="../index.html"><img src="../assets/img/foodblog_logo.png" alt="Food blog by John Doe" /></a>
 			</h1>
-			<a href="#" class="header_menuBurger" id="js-menuBurger">
+			<a href="#" class="header_menuBurger" id="js-menuBurger" title="Mobile menu" aria-label="Mobile menu">
 				<div class="header_menuBurger_line"></div>
 				<div class="header_menuBurger_line"></div>
 				<div class="header_menuBurger_line"></div>
@@ -56,7 +56,7 @@
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae distinctio, dolores officia repellendus consequuntur quo officiis, veritatis dolorem, id nostrum totam perspiciatis quam rerum doloribus nesciunt assumenda explicabo placeat facilis!
 					</p>
 					<a href="#" class="js-modalTrigger" data-modal-src="../assets/img/andrew-wise-LfSyYwMHBYQ-unsplash-sized.png">
-						<img class="subpage_image" src="../assets/img/andrew-wise-LfSyYwMHBYQ-unsplash-sized.png" alt="That's me!" />
+						<img class="subpage_image" src="../assets/img/andrew-wise-LfSyYwMHBYQ-unsplash-sized.png" alt="That's me! John Doe" />
 					</a>
 
 					<p class="subpage_p">
@@ -70,22 +70,22 @@
 					<div class="gallery">
 						<div class="gallery_item">
 							<a href="#" class="js-modalTrigger" data-modal-src="../assets/img/recipe/kelvin-t-AcA8moIiD3g-unsplash.jpg">
-								<img src="../assets/img/recipe/kelvin-t-AcA8moIiD3g-unsplash.jpg" class="gallery_itemImage" alt="This is gallery image" />
+								<img src="../assets/img/recipe/pizza/kelvin-t-AcA8moIiD3g-unsplash.jpg" class="gallery_itemImage" alt="My favourite pizza" />
 							</a>
 						</div>
 						<div class="gallery_item">
-							<a href="#" class="js-modalTrigger" data-modal-src="../assets/img/recipe/kelvin-t-AcA8moIiD3g-unsplash.jpg">
-								<img src="../assets/img/recipe/kelvin-t-AcA8moIiD3g-unsplash.jpg" class="gallery_itemImage" alt="This is gallery image" />
+							<a href="#" class="js-modalTrigger" data-modal-src="../assets/img/recipe/spaghetti/sorin-popa-XAxvKp0tdwU-unsplash.jpg">
+								<img src="../assets/img/recipe/spaghetti/sorin-popa-XAxvKp0tdwU-unsplash.jpg" class="gallery_itemImage" alt="Spaghetti bolognese" />
 							</a>
 						</div>
 						<div class="gallery_item">
-							<a href="#" class="js-modalTrigger" data-modal-src="../assets/img/recipe/kelvin-t-AcA8moIiD3g-unsplash.jpg">
-								<img src="../assets/img/recipe/kelvin-t-AcA8moIiD3g-unsplash.jpg" class="gallery_itemImage" alt="This is gallery image" />
+							<a href="#" class="js-modalTrigger" data-modal-src="../assets/img/recipe/hamburger/jean-claude-attipoe-EtJiql0AdwI-unsplash.jpg">
+								<img src="../assets/img/recipe/hamburger/jean-claude-attipoe-EtJiql0AdwI-unsplash.jpg" class="gallery_itemImage" alt="Great American hamburger" />
 							</a>
 						</div>
 						<div class="gallery_item">
-							<a href="#" class="js-modalTrigger" data-modal-src="../assets/img/recipe/kelvin-t-AcA8moIiD3g-unsplash.jpg">
-								<img src="../assets/img/recipe/kelvin-t-AcA8moIiD3g-unsplash.jpg" class="gallery_itemImage" alt="This is gallery image" />
+							<a href="#" class="js-modalTrigger" data-modal-src="../assets/img/recipe/fries/brad-acx4iJr0mGA-unsplash.jpg">
+								<img src="../assets/img/recipe/fries/brad-acx4iJr0mGA-unsplash.jpg" class="gallery_itemImage" alt="Best fries!" />
 							</a>
 						</div>
 					</div>
@@ -192,28 +192,36 @@
 						<article class="recipe -selected" role="article">
 							<div class="recipeHeader">
 								<div class="recipe_image">
-									<img src="../assets/img/recipe/kelvin-t-AcA8moIiD3g-unsplash.jpg" alt="Recipe image">
+									<img src="../assets/img/recipe/baguette/slashio-photography-yP4ZnJTWoZ8-unsplash.jpg" alt="French baguette">
 								</div>
 								<img src="../assets/img/andrew-wise-LfSyYwMHBYQ-unsplash.png" alt="Jan Kry" srcset="../assets/img/andrew-wise-LfSyYwMHBYQ-unsplash.png" class="recipe_author" />
 							</div>
 
-							<h3 class="recipe_title">Homemade sicilian pizza</h3>
-							<ul class="recipe_category">
-								<li class="recipe_category-item">
-									<a href="">Pizza</a>
-								</li>
-								<li class="recipe_category-item">
-									<a href="">Italian</a>
-								</li>
-								<li class="recipe_category-item">
-									<a href="">Dinner</a>
-								</li>
-							</ul>
-
-							<p class="recipe_perex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deserunt, aliquid cumque perspiciatis modi quos. Iste fugit maiores ex dolor quas necessitatibus dignissimos suscipit omnis! Laboriosam distinctio tempora eius nostrum. Iste fugit maiores ex dolor quas necessitatibus dignissimos suscipit omnis! Laboriosam distinctio tempora eius nostrum.</p>
+							<h3 class="recipe_title">French baguette</h3>
+							<p class="recipe_perex">
+								Your own homemade pastries for breakfast or a delicious dinner? Do you want to prepare a delicious stuffed baguette? With our recipe, you will no longer want a store-bought one. Original French recipe.
+							</p>
 
 							<div class="recipe_footer">
-								<a href="http://" class="button -primary">View recipe</a>
+								<a href="recipedetail-spaghetti.html" class="button -primary" aria-label="Read French baguette recipe">View recipe</a>
+							</div>
+						</article>
+
+						<article class="recipe -selected" role="article">
+							<div class="recipeHeader">
+								<div class="recipe_image">
+									<img src="../assets/img/recipe/hamburger/jean-claude-attipoe-EtJiql0AdwI-unsplash.jpg" alt="American beef burger">
+								</div>
+								<img src="../assets/img/andrew-wise-LfSyYwMHBYQ-unsplash.png" alt="Jan Kry" srcset="../assets/img/andrew-wise-LfSyYwMHBYQ-unsplash.png" class="recipe_author" />
+							</div>
+
+							<h3 class="recipe_title">American beef burger</h3>
+							<p class="recipe_perex">
+								A fresh bun, homemade mayonnaise, a slice of cheddar cheese, an iceberg lettuce leaf, a tomato and a slab of beef - that's the iconic American hamburger according to a traditional recipe. Don't miss this great recipe for summer barbecues and winter lunches.
+							</p>
+
+							<div class="recipe_footer">
+								<a href="recipedetail-hamburger.html" class="button -primary" aria-label="Read American beef burger recipe">View recipe</a>
 							</div>
 						</article>
 
