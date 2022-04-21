@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Foodie | About author</title>
+		<title>Story | Food blog by Jan Kry</title>
 		<link rel="stylesheet" href="../assets/css/style.css" />
 		<script src="../assets/js/validation.js"></script>
 		<script src="../assets/js/modal.js"></script>
@@ -94,22 +94,22 @@
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae distinctio, dolores officia repellendus consequuntur quo officiis, veritatis dolorem, id nostrum totam perspiciatis quam rerum doloribus nesciunt assumenda explicabo placeat facilis!
 					</p>
 
-					<table class="table">
+					<table class="table" id="curiculumvitae">
 						<thead>
-							<th colspan="2" class="table_headline">Curriculum vitae</th>
+							<caption class="table_headline">Curriculum vitae</caption>
 						</thead>
 						<tbody>
 							<tr>
-								<td class="table_subHeadline">Name</td>
-								<td>John Doe</td>
+								<th class="table_subHeadline" id="name">Name</th>
+								<td headers="name">John Doe</td>
 							</tr>
 							<tr>
-								<td class="table_subHeadline">Birthday</td>
-								<td>01.01.2000</td>
+								<th class="table_subHeadline" id="birthday">Birthday</th>
+								<td headers="birthday">01.01.2000</td>
 							</tr>
 							<tr>
-								<td class="table_subHeadline">Address</td>
-								<td>
+								<th class="table_subHeadline" id="address">Address</th>
+								<td headers="address">
 									<span class="table_block">
 										Ulice 12/33
 									</span>
@@ -122,16 +122,16 @@
 								</td>
 							</tr>
 							<tr>
-								<td class="table_subHeadline">Phone</td>
-								<td>+420 123 456 789</td>
+								<th class="table_subHeadline" id="phone">Phone</th>
+								<td headers="phone"><a href="tel:+420123456789">+420 123 456 789</a></td>
 							</tr>
 							<tr>
-								<td class="table_subHeadline">Email</td>
-								<td>johndoe@example.com</td>
+								<th class="table_subHeadline" id="email">Email</th>
+								<td headers="email"><a href="mailto:johndoe@example.com">johndoe@example.com</a></td>
 							</tr>
 							<tr>
-								<td class="table_subHeadline">Education</td>
-								<td>
+								<th class="table_subHeadline" id="education">Education</th>
+								<td headers="education">
 									<span class="table_block">
 										<strong>University of Hradec Kralove</strong><br />
 										Bachelor of Science <br />
@@ -145,8 +145,8 @@
 								</td>
 							</tr>
 							<tr>
-								<td class="table_subHeadline">Work</td>
-								<td>
+								<th class="table_subHeadline" id="work">Work</th>
+								<td headers="work">
 									<span class="table_block">
 										<strong>Microsoft</strong><br />
 										QA Engeneer Director<br />
@@ -162,8 +162,8 @@
 							</tr>
 
 							<tr>
-								<td class="table_subHeadline">Volunteering</td>
-								<td>
+								<th class="table_subHeadline" id="volunteering">Volunteering</th>
+								<td headers="volunteering">
 									<span class="table_block">
 										<strong>The Salvation Army</strong><br />
 										Volunteer / food distribution<br />
@@ -225,7 +225,7 @@
 			<div class="container">
 				&copy; 2022 <a href="">Jan Kry</a>. <br />
 				Školní projekt pro předmět KTPW1. / This is an school semestral project <br />
-				All images are from <a href="https://unsplash.com/">Unsplash</a>. Icons by <a href="https://www.freepik.com/free-vector/big-bundle-set-vector-illustrations-fine-line-icons-32x32-pixel-perfect_1320597.htm#query=food%20icons&position=4&from_view=search" target="_blank">Freepik.com</a>
+				All images are from <a href="https://unsplash.com/">Unsplash</a>. <br /> Last update {lastupdate}
 			</div>
 		</footer>
 		<!-- Modal -->
