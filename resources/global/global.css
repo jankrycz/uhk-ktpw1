@@ -4,7 +4,7 @@ body {
 	margin: 0;
 	color: $color-black-light;
 	background: $color-gray-light;
-	font-family: 'Roboto', sans-serif;
+	font-family: Roboto, sans-serif;
 	font-size: 10px;
 }
 

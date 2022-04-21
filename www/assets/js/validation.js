@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function(){
 		formFields = {
 			'name': {
 				'input': 'js-name',
-				'regexp': /^[a-zA-Z]+$/,
+				'regexp': /^(?! *$)[a-zA-Z.+ '-]+$/,
 				'errorMessage': 'Name must contain only letters'
 			},
 			'email': {
@@ -20,8 +20,7 @@ document.addEventListener("DOMContentLoaded", function(){
 				'input': 'js-comment',
 				'regexp': /^[a-zA-Z0-9\s]+$/,
 				'errorMessage': 'Comment must contain only letters and numbers'
-			},
-			'submit': 'js-submit'
+			}
 		};
 
 	form.addEventListener("submit", function(e) {
@@ -30,6 +29,10 @@ document.addEventListener("DOMContentLoaded", function(){
 		// Validate defined fields
 		for (const fieldName in formFields) {
 			validate(formFields[fieldName].input, formFields[fieldName].regexp, formFields[fieldName].errorMessage);
+		}
+		// If error messages not exist
+		if (document.querySelectorAll('[id^="js-error-"]').length === 0) {
+			addComment(new FormData(form));
 		}
 	});
 
@@ -40,14 +43,15 @@ document.addEventListener("DOMContentLoaded", function(){
 	 * @param  {string} errorMessage
 	*/
 	function validate(fieldID, regexp, errorMessage) {
-		const input = document.getElementById(fieldID),
-			isValid = input.value.match(regexp);
+		let input = document.getElementById(fieldID),
+			hasErrorElement = document.getElementById(`js-error-${input.name}`) || false,
+			isValid = regexp.test(input.value);
 
-		if (isValid && document.getElementById(`js-error-'${input.name}`) !== null) {
+		if (isValid && hasErrorElement) {
 			removeError(input);
-		} else if (!isValid && document.getElementById('js-error-'+input.name) === null) {
+		} else if (!isValid && !hasErrorElement) {
 			throwError(input, errorMessage);
-		} 
+		}
 	};
 
 	/**
@@ -69,5 +73,36 @@ document.addEventListener("DOMContentLoaded", function(){
 	function removeError(field) {
 		field.parentNode.classList.remove("-error");
 		let error = document.getElementById('js-error-'+field.name).remove();
+	}
+
+	/**
+	 * Add comment
+	 * @param {object} formData
+	 */
+	function addComment(formData) {
+		let commentWrapper = document.getElementById('js-commentsList'),
+			commentDom = `
+				<div class="comment">
+					<div class="comment_image">
+						<div class="avatar">${formData.get('userName').charAt(0).toUpperCase()}</div>
+					</div>
+					<div class="comment_content">
+						<div class="comment_info">
+							<span class="comment_info-authorName">${formData.get('userName')}</span>
+							<span class="comment_info-date">on ${new Date().toLocaleDateString()}</span>
+						</div>
+						<p class="comment_text">
+							${formData.get('userMessage')}
+						</p>
+					</div>
+					<div class="comment_footer">
+						<a href="#" class="comment_footer-link">Reply</a> | <a href="#" class="comment_footer-link">Like (0)</a> | <a href="#" class="comment_footer-link">Report</a>
+					</div>
+				</div>
+			`;
+		// Append comment into comments list
+		commentWrapper.insertAdjacentHTML("afterbegin", commentDom);
+		// Reset form
+		form.reset();
 	}
 });
