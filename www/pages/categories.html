@@ -26,12 +26,12 @@
 			<h1 class="header_site">
 				<a href="../index.html"><img src="../assets/img/foodblog_logo.png" alt="Food blog by John Doe" /></a>
 			</h1>
-			<a href="#" class="header_menuBurger" id="js-menuBurger">
+			<a href="#" class="header_menuBurger" id="js-menuBurger" title="Mobile menu" aria-label="Mobile menu">
 				<div class="header_menuBurger_line"></div>
 				<div class="header_menuBurger_line"></div>
 				<div class="header_menuBurger_line"></div>
 			</a>
-			<nav class="header_menu" id="js-menu">
+			<nav class="header_menu" id="js-menu" role="navigation">
 				<ul class="menu">
 					<li>
 						<a href="../index.html">Home</a>
@@ -49,7 +49,7 @@
 			</nav>
 		</header>
 		<div class="contentContainer container -subPage">
-			<main class="main">
+			<main class="main" role="main">
 				<h2 class="headline -subPage -left">Recipes categories</h2>
 				<section class="subpage -categories">
 					<article class="recipe -category">
@@ -58,23 +58,23 @@
 								<img src="../assets/img/recipe/noodles/kirill-tonkikh-NFQi_2HUNRI-unsplash.jpg" alt="Asian recipes">
 							</div>
 						</div>
-						<h4 class="headline recipe_title">Asian recipes</h4>
+						<h3 class="headline recipe_title">Asian recipes</h3>
 						<p class="recipe_perex">Checkout my best Asian recipes! Authentic asian cousine, soups, noodles, salates and many more!</p>
 						<div class="recipe_footer">
-							<a href="http://" class="button -primary">View category</a>
+							<a href="categories-france.html#asia" class="button -primary">View category</a>
 						</div>
 					</article>
 
 					<article class="recipe -category">
 						<div class="recipeHeader">
 							<div class="recipe_image">
-								<img src="./../assets/img/recipe/pizza/kelvin-t-AcA8moIiD3g-unsplash.jpg" alt="Italian recipes">
+								<img src="../assets/img/recipe/pizza/kelvin-t-AcA8moIiD3g-unsplash.jpg" alt="Italian recipes">
 							</div>
 						</div>
-						<h4 class="headline recipe_title">Italian recipes</h4>
+						<h3 class="headline recipe_title">Italian recipes</h3>
 						<p class="recipe_perex">Pizza, pasta and Mediterranean cuisine recipes. Learn how to prepare homemade pasta or pizza dough.</p>
 						<div class="recipe_footer">
-							<a href="http://" class="button -primary">View category</a>
+							<a href="categories-france.html#italia" class="button -primary">View category</a>
 						</div>
 					</article>
 
@@ -84,10 +84,12 @@
 								<img src="../assets/img/recipe/hamburger/jean-claude-attipoe-EtJiql0AdwI-unsplash.jpg" alt="American recipes">
 							</div>
 						</div>
-						<h4 class="headline recipe_title">American recipes</h4>
-						<p class="recipe_perex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deserunt, aliquid cumque perspiciatis modi quos.</p>
+						<h3 class="headline recipe_title">American recipes</h3>
+						<p class="recipe_perex">
+							Best American recipes. Try our homemade hamburger, cheeseburger, hot dog, pizza, pasta and more!
+						</p>
 						<div class="recipe_footer">
-							<a href="http://" class="button -primary">View category</a>
+							<a href="categories-france.html#american" class="button -primary">View category</a>
 						</div>
 					</article>
 
@@ -97,10 +99,12 @@
 								<img src="../assets/img/recipe/fries/brad-acx4iJr0mGA-unsplash.jpg" alt="French recipes">
 							</div>
 						</div>
-						<h4 class="headline recipe_title">French recipes</h4>
-						<p class="recipe_perex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deserunt, aliquid cumque perspiciatis modi quos.</p>
+						<h3 class="headline recipe_title">French recipes</h3>
+						<p class="recipe_perex">
+							French cuisine recipes. Baguettes, soups, salads, desserts and more! Check it out!
+						</p>
 						<div class="recipe_footer">
-							<a href="http://" class="button -primary">View category</a>
+							<a href="categories-france.html" class="button -primary">View category</a>
 						</div>
 					</article>
 				</section>
@@ -111,13 +115,13 @@
 					<form class="form advancedSearch_form">
 
 						<div class="advancedSearch_form-item">
-							<label class="form_label advancedSearch_form-label" for="">Search</label>
-							<input class="form_input advancedSearch_form-input" type="text" name="" id="" />
+							<label class="form_label advancedSearch_form-label" for="searchInput" id="searchInput_label">Search</label>
+							<input class="form_input advancedSearch_form-input" type="text" name="searchInput" id="" aria-labelledby="searchInput_label" />
 						</div>
 
 						<div class="advancedSearch_form-item">
-							<label class="form_label advancedSearch_form-label" for="">Category</label>
-							<select class="form_select advancedSearch_form-select" name="" id="">
+							<label class="form_label advancedSearch_form-label" for="categoryItem" id="categoryItem_label">Category</label>
+							<select class="form_select advancedSearch_form-select" name="categoryItem" aria-labelledby="categoryItem_label">
 								<option value="italian">Italian</option>
 								<option value="american">American</option>
 								<option value="vietnam">Vietnam</option>
@@ -130,48 +134,47 @@
 						</div>
 
 						<div class="advancedSearch_form-item">
-							<label class="form_label advancedSearch_form-label" for="">Vegan</label>
+							<label class="form_label advancedSearch_form-label" for="isveganFood" id="isveganFood_label">Vegan</label>
 							<div class="advancedSearch_form-radioGroup">
 								<label>
-									<input class="form_radio advancedSearch_form-radio" type="radio" name="isveganFood" id="">
+									<input class="form_radio advancedSearch_form-radio" type="radio" name="isveganFood" aria-labelledby="isveganFood_label">
 									yes
 								</label>
 								<label>
-									<input class="form_radio advancedSearch_form-radio" type="radio" name="isveganFood" id="">
+									<input class="form_radio advancedSearch_form-radio" type="radio" name="isveganFood" aria-labelledby="isveganFood_label">
 									no
 								</label>
 							</div>
 						</div>
 
 						<div class="advancedSearch_form-item">
-							<label class="form_label advancedSearch_form-label" for="">Max prep time (minutes)</label>
-							<input class="form_range" type="range" name="" id="js-range" min="1" max="120" value="60" data-content="60" oninput="rangeChange()">
+							<label class="form_label advancedSearch_form-label" for="prepTime" id="prepTime_label">Max prep time (minutes)</label>
+							<input class="form_range" type="range" name="prepTime" id="js-range" min="1" max="120" value="60" data-content="60" oninput="rangeChange()" aria-labelledby="prepTime_label" />
 						</div>
 
 						<div class="advancedSearch_form-item">
 							<label class="form_label advancedSearch_form-label">Core ingredients</label>
 							<div class="advancedSearch_form-checkboxGroup">
-								<label for="cheese">
-									<input class="form_checkbox" type="checkbox" name="cheese"> Cheese
+								<label for="cheese" id="cheese_label">
+									<input class="form_checkbox" type="checkbox" name="cheese" aria-labelledby="cheese_label"> Cheese
 								</label>
-								<label for="meat">
-									<input class="form_checkbox" type="checkbox" name="meat"> Meat
+								<label for="meat" id="meat_label">
+									<input class="form_checkbox" type="checkbox" name="meat" aria-labelledby="meat_label"> Meat
 								</label>
-
-								<label for="fruit">
-									<input class="form_checkbox" type="checkbox" name="fruit"> Fruit
+								<label for="fruit" id="fruit_label">
+									<input class="form_checkbox" type="checkbox" name="fruit" aria-labelledby="fruit_label"> Fruit
 								</label>
-								<label for="dairy">
-									<input class="form_checkbox" type="checkbox" name="dairy"> Dairy
+								<label for="dairy" id="dairy_label">
+									<input class="form_checkbox" type="checkbox" name="dairy" aria-labelledby="dairy_label"> Dairy
 								</label>
-								<label for="sauce">
-									<input class="form_checkbox" type="checkbox" name="sauce"> Sauce
+								<label for="sauce" id="sauce_label">
+									<input class="form_checkbox" type="checkbox" name="sauce" aria-labelledby="sauce_label"> Sauce
 								</label>
-								<label for="spice">
-									<input class="form_checkbox" type="checkbox" name="spice"> Spice
+								<label for="spice" id="spice_label">
+									<input class="form_checkbox" type="checkbox" name="spice" aria-labelledby="spice_label"> Spice
 								</label>
-								<label for="other">
-									<input class="form_checkbox" type="checkbox" name="other"> Other
+								<label for="other" id="other_label">
+									<input class="form_checkbox" type="checkbox" name="other" aria-labelledby="other_label" > Other
 								</label>
 							</div>
 						</div>
@@ -181,7 +184,7 @@
 				</section>
 			</aside>
 		</div>
-		<footer>
+		<footer role="contentinfo">
 			<div class="container">
 				&copy; 2022 <a href="">Jan Kry</a>. <br />
 				Školní projekt pro předmět KTPW1. / This is an school semestral project <br />
