@@ -1,74 +1,74 @@
 POŽADAVKY NA ŘEŠENÍ
 
 Rozvržení stránky
-[] Přitažlivý vzhled pro cílové publikum.
-[] Konzistentní záhlaví/logo stránky
-[] Konzistentní navigační oblast
-[] Informativní titulek webu, který obsahuje název společnosti/webu
-[] Oblast zápatí obsahuje informace o právech užívání (copyright), datum poslední aktualizace, kontaktní email
-[] Dobré použití základních principů designu: opakování, kontrast, blízkost a zarovnání
-[] Zobrazení bez vodorovného posouvání při rozlišení 1024x768 a víc
-[] Rovnováha mezi textem, grafikou a prázdným místem na stránce
-[] Informace, které se opakují (záhlaví/logo a navigace), zabírají max. třetinu okna prohlížeče při rozlišení 1024x768
-[] Domovská stránka obsahuje přitažlivé, zajímavé informace nad ohybem (t.j. bez posouvání dolů) při rozlišení 1024x768
-[] Použita metaznačka viewport pro zobrazení na mobilu
-[] Responzivní návrh rozložení s využitím media queries pro zobrazení na mobilu a na tabletu
+[x] Přitažlivý vzhled pro cílové publikum.
+[x] Konzistentní záhlaví/logo stránky
+[x] Konzistentní navigační oblast
+[x] Informativní titulek webu, který obsahuje název společnosti/webu
+[x] Oblast zápatí obsahuje informace o právech užívání (copyright), datum poslední aktualizace, kontaktní email
+[x] Dobré použití základních principů designu: opakování, kontrast, blízkost a zarovnání
+[x] Zobrazení bez vodorovného posouvání při rozlišení 1024x768 a víc
+[x] Rovnováha mezi textem, grafikou a prázdným místem na stránce
+[x] Informace, které se opakují (záhlaví/logo a navigace), zabírají max. třetinu okna prohlížeče při rozlišení 1024x768
+[x] Domovská stránka obsahuje přitažlivé, zajímavé informace nad ohybem (t.j. bez posouvání dolů) při rozlišení 1024x768
+[x] Použita metaznačka viewport pro zobrazení na mobilu
+[x] Responzivní návrh rozložení s využitím media queries pro zobrazení na mobilu a na tabletu
 
 Prezentace obsahu
-[] Použity běžné fonty jako Arial, Verdana, Georgia či Times New Roman
-[] Dodrženy doporučené zásady psaní pro web: nadpisy, odrážkové body, krátké odstavce,a pod.
-[] Konzistentní použití fontů, velikostí znaků a barev znaků 
-[] Nanejvýš jeden webový font (z banky fontů)
-[] Obsah dodává smysluplnou, užitečnou informaci
-[] Organizace obsahu je konzistentní
-[] Snadné nalezení informací (malý počet kliknutí)
-[] Obsah je aktuální (správné datum copyrightu nebo poslední aktualizace)
-[] Obsah nemá zastaralé části
-[] V obsahu nejsou překlepy a gramatické chyby
-[] Hypertextové odkazy používájí konzistentní označení pro stav odkazu (navštíven/nenavštíven)
-[] Je k dispozici alternativní obsah pro grafiku 
+[x] Použity běžné fonty jako Arial, Verdana, Georgia či Times New Roman
+[x] Dodrženy doporučené zásady psaní pro web: nadpisy, odrážkové body, krátké odstavce,a pod.
+[x] Konzistentní použití fontů, velikostí znaků a barev znaků
+[x] Nanejvýš jeden webový font (z banky fontů)
+[x] Obsah dodává smysluplnou, užitečnou informaci
+[x] Organizace obsahu je konzistentní
+[x] Snadné nalezení informací (malý počet kliknutí)
+[x] Obsah je aktuální (správné datum copyrightu nebo poslední aktualizace)
+[x] Obsah nemá zastaralé části
+[x] V obsahu nejsou překlepy a gramatické chyby
+[x] Hypertextové odkazy používájí konzistentní označení pro stav odkazu (navštíven/nenavštíven)
+[x] Je k dispozici alternativní obsah pro grafiku
 
 Barvy, grafika, multimédia
-[] Barevné schéma obsahuje max 3-4 barvy plus barvy neutrální
-[] Barvy jsou použity konzistentně
-[] Použité barvy a grafiky návštvěníka povzbuzují a neodrazují od návštěvy stránek
-[] Grafika je optimalizována pro web a načítání stránky výrazně nezpomaluje 
-[] Každý grafický prvek má jasný účel
-[] Audio a video soubory slouží k jasnému účelu
-[] Použité audio a video prvky návštvěníka povzbuzují a neodrazují od návštěvy stránek
-[] Před stažením audio nebo video souboru je uvedena velikost stahovaného souboru
+[x] Barevné schéma obsahuje max 3-4 barvy plus barvy neutrální
+[x] Barvy jsou použity konzistentně
+[x] Použité barvy a grafiky návštvěníka povzbuzují a neodrazují od návštěvy stránek
+[x] Grafika je optimalizována pro web a načítání stránky výrazně nezpomaluje
+[x] Každý grafický prvek má jasný účel
+[x] Audio a video soubory slouží k jasnému účelu
+[x] Použité audio a video prvky návštvěníka povzbuzují a neodrazují od návštěvy stránek
+[x] Před stažením audio nebo video souboru je uvedena velikost stahovaného souboru
 
 Navigace, funkčnost
-[] Odkazy hlavní navigace jsou jasně a konzistentně pojmenovány
-[] Navigace je snadno použitelná pro cílové publikum
-[] Řádné zobrazení v aktuální verzi Google Chrome
-[] Řádné zobrazení v aktuální verzi jiného desktopového prohlížeče dle výběru
-[] Řádné zobrazení na mobilu a tabletu
-[] Všechny interní hypertextové odkazy fungují
-[] Všechny externí hypertextové odkazy fungují
-[] Všechny formuláře fungují jak by měly
+[x] Odkazy hlavní navigace jsou jasně a konzistentně pojmenovány
+[x] Navigace je snadno použitelná pro cílové publikum
+[x] Řádné zobrazení v aktuální verzi Google Chrome
+[x] Řádné zobrazení v aktuální verzi jiného desktopového prohlížeče dle výběru
+[x] Řádné zobrazení na mobilu a tabletu
+[x] Všechny interní hypertextové odkazy fungují
+[x] Všechny externí hypertextové odkazy fungují
+[x] Všechny formuláře fungují jak by měly
 
 Přístupnost
-[] Jestliže hlavní navigace používá obrázky nebo média, v zápatí jsou uvedeny jasné alternativní textové odkazy
-[] Navigace je strukturovaná jako neřazený seznam
-[] Jsou použity pomocné navigační prvky, jako mapa stránek, skok na obsah, drobečková navigace
-[] Barva není výlučným nositelem sdělení (významu)
-[] Barvy pozadí a textu jsou dostatečně kontrastní
-[] Atribut alt všech obrázků s významem je použit pro nastavení textové alternativy k obrázku
-[] Jestliže grafika nese sdělení, je uveden i alternativní textový ekvivalent 
-[] Atributy id a headers jsou použity u tabulky pro zlepšení její čitelnosti 
-[] Jazyk obsahu stránky je uveden v atributu lang elementu HTML pro účely čteček stránky
-[] Atributy role jsou použity pro nastavení ARIA orientační role
+[x] Jestliže hlavní navigace používá obrázky nebo média, v zápatí jsou uvedeny jasné alternativní textové odkazy
+[x] Navigace je strukturovaná jako neřazený seznam
+[x] Jsou použity pomocné navigační prvky, jako mapa stránek, skok na obsah, drobečková navigace
+[x] Barva není výlučným nositelem sdělení (významu)
+[x] Barvy pozadí a textu jsou dostatečně kontrastní
+[x] Atribut alt všech obrázků s významem je použit pro nastavení textové alternativy k obrázku
+[x] Jestliže grafika nese sdělení, je uveden i alternativní textový ekvivalent
+[x] Atributy id a headers jsou použity u tabulky pro zlepšení její čitelnosti
+[x] Jazyk obsahu stránky je uveden v atributu lang elementu HTML pro účely čteček stránky
+[x] Atributy role jsou použity pro nastavení ARIA orientační role
 
 Ostatní podmínky
-[] Projekt je zveřejněn na Internetu, nejlépe na lide.uhk.cz (lze i jinde).
-[] Minimální požadovaný rozsah je 5 stránek (HTML dokumentů) a 500 slov
-[] V maximální míře budou použity strukturální elementy HTML5 (header, footer, nav, main, a další)
-[] Použití jazyka HTML5 a CSS se bude splňovat aktuální doporučené postupy (vhodná organizace kódu, oddělení značkování od stylování, efektivní pravidla)
-[] Web je v patičce zřetelně označen jako studentský zápočtový projekt.
-[] Projekt není alternativní verzí existujícího webu
-[] Projekt nekopíruje existující web
-[] Projekt ani žádná jeho část neporušuje autorská práva
-[] Projekt je originálním a výlučným dílem odevzdávajícího studenta včetně formátu a responzivity.
-[] Použití JS knihoven pro doplňkové funkce je dovoleno.
-[] Použití frameworků jako je Boostrap, Skeleton není povoleno.
+[x] Projekt je zveřejněn na Internetu, nejlépe na lide.uhk.cz (lze i jinde).
+[x] Minimální požadovaný rozsah je 5 stránek (HTML dokumentů) a 500 slov
+[x] V maximální míře budou použity strukturální elementy HTML5 (header, footer, nav, main, a další)
+[x] Použití jazyka HTML5 a CSS se bude splňovat aktuální doporučené postupy (vhodná organizace kódu, oddělení značkování od stylování, efektivní pravidla)
+[x] Web je v patičce zřetelně označen jako studentský zápočtový projekt.
+[x] Projekt není alternativní verzí existujícího webu
+[x] Projekt nekopíruje existující web
+[x] Projekt ani žádná jeho část neporušuje autorská práva
+[x] Projekt je originálním a výlučným dílem odevzdávajícího studenta včetně formátu a responzivity.
+[x] Použití JS knihoven pro doplňkové funkce je dovoleno.
+[x] Použití frameworků jako je Boostrap, Skeleton není povoleno.
