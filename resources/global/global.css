@@ -27,7 +27,6 @@ p {
 	position: fixed;
 	top: 0;
 	left: 0;
-	tab-index: 0;
 	padding: 1.5rem;
 	font-size: 1.6rem;
 	background: $color-gray-light;
