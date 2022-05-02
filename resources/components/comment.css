@@ -14,13 +14,12 @@
 	margin: 2rem 0;
 	padding: 0 0 0 1rem;
 	font-size: 1.4rem;
-	border-left: 0.5rem solid $color-pink;
+	border-left: .5rem solid $color-pink;
 }
 
 .comment {
 	display: flex;
 	flex-flow: row wrap;
-	align-items: space-between;
 	margin: 4rem 0 0 2rem;
 	padding: 1rem;
 	background: $color-gray-light;

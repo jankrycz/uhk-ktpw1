@@ -68,7 +68,6 @@
 
 	& .recipe_body {
 		display: flex;
-		justify-content: row;
 		flex-wrap: wrap;
 		padding: 1.5rem;
 
@@ -131,7 +130,7 @@
 			& .recipe_footer-social {
 				position: relative;
 				margin: .3rem;
-				text-decoration: underli-ne;
+				text-decoration: underline;
 
 				&:not(:last-child) {
 

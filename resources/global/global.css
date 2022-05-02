@@ -21,3 +21,19 @@ p {
 	font-size: 1.8rem;
 	line-height: 3rem;
 }
+
+.skip-to-content {
+	z-index: 9999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	tab-index: 0;
+	padding: 1.5rem;
+	font-size: 1.6rem;
+	background: $color-gray-light;
+	transform: translateY(-100%);
+
+	&:focus-within {
+		transform: translateY(0%);
+	}
+}
