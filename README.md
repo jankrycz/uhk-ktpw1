@@ -20,7 +20,18 @@ Website is [HTML](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjankrycz.github
     |-- img
     |-- js
   |-- pages
+|-- wireframes
 ```
+
+## Wireframes
+Wireframes are stored in wireframe folder
+
+List of wireframes:
+- Desktop homepage - wireframe_homepage_desktop.jpeg
+- Desktop subpage - wireframe_subpage_desktop.jpeg
+- Tablet subpage - wireframe_subpage_tablet.jpeg
+- Mobile homepage - wireframe_homepage_mobile.jpeg
+- Mobile subpage - wireframe_subpage_mobile.jpeg
 
 ## Images and sources
 All images are from [unsplash.com](https://unsplash.com) and are free for non-commercial use. Contribution is not required. Icons are from [iconmonstr.com](http://iconmonstr.com)
