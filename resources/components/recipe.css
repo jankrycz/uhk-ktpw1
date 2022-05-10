@@ -150,5 +150,9 @@
 		& .recipe_image {
 			margin-bottom: 1.5rem;
 		}
+
+		@media (max-width: $mobile-max) {
+			max-width: 100%;
+		}
 	}
 }

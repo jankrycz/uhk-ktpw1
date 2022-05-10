@@ -2,6 +2,7 @@ html,
 body {
 	padding: 0;
 	margin: 0;
+	min-width: 320px;
 	color: $color-black-light;
 	background: $color-gray-light;
 	font-family: Roboto, sans-serif;
